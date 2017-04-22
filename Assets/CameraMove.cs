@@ -10,8 +10,8 @@ public class CameraMove : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-        transform.Translate(0f, 0f, 0.05f);
+	void FixedUpdate () {
+        transform.Translate(Camera.main.transform.forward);
 		
 	}
 }
